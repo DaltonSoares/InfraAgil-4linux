@@ -1,0 +1,10 @@
+ - name: Criando page no Apache
+   template: 
+     src: ../templates/index.html
+     dest: /var/www/html/index.html
+     
+
+ - name: Baixar uma imagem
+   get_url:
+     url: https://png2.kisspng.com/20180516/qcw/kisspng-marvin-the-hitchhiker-s-guide-to-the-galaxy-robby-5afbb083472984.7980192415264441632915.png
+     dest: /var/www/html/imagem.jpg

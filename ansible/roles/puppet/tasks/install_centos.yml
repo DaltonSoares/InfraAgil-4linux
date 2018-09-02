@@ -1,0 +1,14 @@
+ - name: Instalando Puppet no CentOS
+   yum: 
+     name: /root/puppet5-release-el-7.noarch.rpm
+     state: present
+     update_cache: yes
+   when: ansible_os_family == "RedHat"
+
+ - name: Instalando puppet-agent no RedHat
+   yum: 
+     name: puppet-agent
+     state: present
+     update_cache: yes
+   when: ansible_os_family == "RedHat"
+    

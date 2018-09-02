@@ -1,0 +1,9 @@
+ - name: Baixar arquivos repositorio RPM (CentOS 7)
+   get_url: 
+     url: https://yum.puppet.com/puppet5/puppet5-release-el-7.noarch.rpm
+     dest: /root
+
+ - name: Baixar arquivos repositorio DEB (Ubuntu 16.04)
+   get_url: 
+     url: https://apt.puppetlabs.com/puppet5-release-xenial.deb
+     dest: /root
